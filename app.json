@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "EIFCHAR",
-    "slug": "EIFCHAR",
+    "name": "SID-SUS",
+    "slug": "SID-SUS",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -13,9 +13,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000000"
+      "backgroundColor": "#fff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

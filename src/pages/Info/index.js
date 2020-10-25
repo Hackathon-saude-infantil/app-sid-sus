@@ -23,7 +23,7 @@ export default function Incidents () {
         style={Styles.input}
         label='user'
         placeholder='Nome'
-        value={'Eduardo'}
+        value={'Eduardo Tomacheski'}
       />
       <TextInput
         style={Styles.input}
@@ -40,7 +40,7 @@ export default function Incidents () {
       <TextInput
         style={Styles.input}
         placeholder='Altura'
-        value={'1.92cm'}
+        value={'1.92m'}
       />
       <TextInput
         style={Styles.input}
