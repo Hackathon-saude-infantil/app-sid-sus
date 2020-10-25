@@ -3,12 +3,16 @@ import { Text, View, TouchableOpacity, Modal, Image, SafeAreaView } from 'react-
 import { Camera } from 'expo-camera';
 import {FontAwesome} from '@expo/vector-icons';
 
+import Styles from './styles.js'
+import { useNavigation } from '@react-navigation/native'
+
 export default function App() {
   const camRef = useRef(null);
   const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
   const [capturedPhoto, setCapturedPhoto] = useState(null);
   const [open, setOpen] = useState(false)
+  const navigation = useNavigation()
 
   useEffect(() => {
     (async () => {
@@ -88,8 +92,6 @@ export default function App() {
           >
               <TouchableOpacity style={{marginLeft: 'auto',marginRight: 0}} onPress={()=> setOpen(false)} >
                 <FontAwesome name="window-close" size={50} color="#ff0000" />
-              
-              
               </TouchableOpacity>
 
               <Image 
@@ -98,6 +100,12 @@ export default function App() {
               >
               </Image>
 
+              <TouchableOpacity style={{marginLeft: 'auto',marginRight: 0}} onPress={() => {
+                 setOpen(false);
+                navigation.navigate('Info')
+                }}>
+                <Text style={Styles.button}>Confirmar</Text>
+              </TouchableOpacity>
           </View>
         </Modal>
       }

@@ -25,7 +25,7 @@ export default function Incidents () {
         </Text>
       </TouchableHighlight>
       <TouchableHighlight
-        onPress={() => Alert.alert('Simple Button pressed')}
+        onPress={() => navigation.navigate('Register')}
       >
         <Text style={Styles.button}>
           Preencher manualmente

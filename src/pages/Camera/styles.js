@@ -6,7 +6,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 24,
-    backgroundColor: '#f0f0f5',
+    backgroundColor: '#fff',
     paddingTop: Constants.statusBarHeight + 20
 
   },
@@ -54,12 +54,11 @@ export default StyleSheet.create({
     fontSize: 26
   },
   button: {
-    marginRight: 40,
-    marginLeft: 40,
+    marginRight: 10,
+    marginLeft: 'auto',
     marginTop: 30,
-    paddingTop: 15,
-    paddingBottom: 15,
-    backgroundColor: '#3A3A45',
+    padding: 15,
+    backgroundColor: '#7dcf00',
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#fff',
