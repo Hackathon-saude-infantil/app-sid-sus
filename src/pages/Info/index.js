@@ -21,7 +21,12 @@ export default function Incidents () {
         placeholder='Nome'
         value={'Eduardo'}
       />
-
+      <TextInput
+        style={Styles.input}
+        label='user'
+        placeholder='RG'
+        value={'9120108064'}
+      />
       <TextInput
         style={Styles.input}
         label='user'

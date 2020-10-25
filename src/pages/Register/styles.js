@@ -11,7 +11,7 @@ export default StyleSheet.create({
   },
 
   header: {
-    marginTop: '30%',
+    marginTop: '5%',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'

@@ -20,6 +20,11 @@ export default function Incidents () {
         label='user'
         placeholder='Nome'
       />
+      <TextInput
+        style={Styles.input}
+        label='user'
+        placeholder='RG'
+      />
 
       <TextInput
         style={Styles.input}
