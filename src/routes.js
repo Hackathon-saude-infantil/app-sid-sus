@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import PageCamera from './pages/Camera'
 import Info from './pages/Info'
 import Register from './pages/Register'
+import ListInfo from './pages/ListInfo'
 
 const AppStack = createStackNavigator()
 
@@ -18,6 +19,8 @@ export default function Routes () {
         <AppStack.Screen name='Camera' component={PageCamera} />
         <AppStack.Screen name='Info' component={Info} />
         <AppStack.Screen name='Register' component={Register} />
+        <AppStack.Screen name='ListInfo' component={ListInfo} />
+
 
 
 

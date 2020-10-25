@@ -3,8 +3,12 @@ import { View, Image, TextInput, Text, TouchableHighlight } from 'react-native'
 
 import LogoImg from '../../assets/logo2.png'
 import Styles from './styles'
+import { useNavigation } from '@react-navigation/native'
+
 
 export default function Incidents () {
+  const navigation = useNavigation()
+
   return (
 
     <View style={Styles.container}>
@@ -48,7 +52,9 @@ export default function Incidents () {
         placeholder='Informações adicionais'
         value={'Alimentação regular'}
       />
-      <TouchableHighlight>
+      <TouchableHighlight
+        onPress={() => navigation.navigate('ListInfo')}
+      >
         <Text style={Styles.button}>
         Confirmar
         </Text>
