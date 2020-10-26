@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, Text, Button, Alert, TouchableHighlight } from 'react-native'
+import { View, Image, Text, Button, Alert, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
 import LogoImg from '../../assets/logo2.png'
@@ -17,20 +17,20 @@ export default function Incidents () {
 
       </View>
 
-      <TouchableHighlight
+      <TouchableOpacity
         onPress={() => navigation.navigate('Camera')}
       >
         <Text style={Styles.button}>
           Tirar Foto
         </Text>
-      </TouchableHighlight>
-      <TouchableHighlight
+      </TouchableOpacity>
+      <TouchableOpacity
         onPress={() => navigation.navigate('Register')}
       >
         <Text style={Styles.button}>
           Preencher manualmente
         </Text>
-      </TouchableHighlight>
+      </TouchableOpacity>
 
     </View>
 
